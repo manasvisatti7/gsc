@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Resource Allocation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Resource Allocation</h1>
+
+<h2>Submit Issue</h2>
+<form id="issueForm">
+  <input type="text" id="location" placeholder="Location" required>
+  
+  <select id="category">
+    <option>Food</option>
+    <option>Health</option>
+    <option>Education</option>
+  </select>
+
+  <input type="number" id="urgency" placeholder="Urgency (1-5)" min="1" max="5">
+  
+  <button type="submit">Submit Issue</button>
+</form>
+
+<h2>Register Volunteer</h2>
+<form id="volunteerForm">
+  <input type="text" id="vname" placeholder="Name" required>
+  <input type="text" id="vlocation" placeholder="Location" required>
+  
+  <button type="submit">Register</button>
+</form>
+
+<h2>Dashboard</h2>
+<div id="issuesList"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
